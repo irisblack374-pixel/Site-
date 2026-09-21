@@ -1,30 +1,25 @@
 <div align="center">
-
-# 🐺 Site-
-
-### Simple Discord Bot • Python • discord.py
-
-A small Discord bot project designed with a simple structure and beginner-friendly setup.
-
-**CODE • CREATE • EVOLVE**
-
+<img src="https://raw.githubusercontent.com/irisblack374-pixel/Site-/main/assets/icons/site.svg" width="70" alt="Site icon">
+<h1>Site-</h1>
+<p><b>Simple Discord Bot • Python • discord.py</b></p>
+<p>A clean Discord bot project focused on useful commands and a simple structure.</p>
 </div>
 
 ---
 
-## 💻 Commands
+## <img src="https://raw.githubusercontent.com/irisblack374-pixel/Site-/main/assets/icons/commands.svg" width="28" align="absmiddle"> COMMANDS
 
-| Command | Purpose |
+| Command | Description |
 |---|---|
-| `/ping` | Check bot response |
-| `/server` | Show server information |
-| `/user` | Show user information |
-| `/avatar` | Show a user's avatar |
-| `/help` | Show available commands |
+| `/ping` | Checks the bot response |
+| `/server` | Shows server information |
+| `/user` | Shows user information |
+| `/avatar` | Displays a user's avatar |
+| `/help` | Shows the available commands |
 
 ---
 
-## ⚙️ Stack
+## <img src="https://raw.githubusercontent.com/irisblack374-pixel/Site-/main/assets/icons/python.svg" width="28" align="absmiddle"> TECHNOLOGY
 
 - Python
 - discord.py
@@ -32,75 +27,79 @@ A small Discord bot project designed with a simple structure and beginner-friend
 
 ---
 
-## 📁 Structure
+## PROJECT STRUCTURE
 
 ```
 Site-/
 ├── bot.py
+├── .env
 ├── requirements.txt
-├── .env.example
-├── .gitignore
 └── README.md
 ```
 
----
+### bot.py
+The main bot file. It contains the Discord client and command logic.
 
-## 🚀 Run
+### .env
+Stores the Discord bot token locally.
 
-Install the requirements:
-
-```bash
-pip install -r requirements.txt
-```
-
-Create `.env`:
+Example:
 
 ```env
-DISCORD_TOKEN=YOUR_BOT_TOKEN
+DISCORD_TOKEN=your_token_here
 ```
 
-Start the bot:
+Do not publish your real token.
 
-```bash
-python bot.py
-```
-
-> Keep your real bot token private. Never commit `.env` to GitHub.
+### requirements.txt
+Contains the Python dependencies required by the project.
 
 ---
 
-## 🧩 How it works
+## HOW IT WORKS
 
 ```
 Discord
    ↓
-discord.py
-   ↓
-bot.py
+Bot
    ↓
 Command
    ↓
 Response
 ```
 
----
-
-## 🔧 Possible Improvements
-
-- Server management commands
-- Ticket system
-- Logs
-- Welcome system
-- Points system
-- Server statistics
-- Per-server configuration
+The bot receives a command from Discord, processes it through the command handler, and returns the requested information.
 
 ---
+
+## RUN
+
+Install the dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+Then start the bot:
+
+```bash
+python bot.py
+```
+
+Make sure the bot token is configured in `.env`.
+
+---
+
+## PROJECT STYLE
+
+**Simple. Clean. Practical.**
+
+The project is intentionally structured so it is easy to understand, modify and expand.
 
 <div align="center">
-
-**🐺 Site-**
-
-*Build. Test. Improve.*
-
+<img src="https://raw.githubusercontent.com/irisblack374-pixel/Site-/main/assets/icons/site.svg" width="42">
+<br><br>
+<b>BUILD • TEST • EVOLVE</b>
+<br>
+2026
 </div>
