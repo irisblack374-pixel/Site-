@@ -6,9 +6,9 @@
 </p>
 
 <p align="center">
-  <img src="https://cdn.simpleicons.org/python/3776AB" width="28" alt="Python">
+  <img src="https://cdn.simpleicons.org/python/3776AB" width="26" alt="Python">
   &nbsp;
-  <img src="https://cdn.simpleicons.org/discord/5865F2" width="28" alt="Discord">
+  <img src="https://cdn.simpleicons.org/discord/5865F2" width="26" alt="Discord">
   &nbsp;
   <img src="https://img.shields.io/badge/Python-3.11+-3776AB?logo=python&logoColor=white" alt="Python 3.11+">
   <img src="https://img.shields.io/badge/discord.py-2.x-5865F2?logo=discord&logoColor=white" alt="discord.py 2.x">
@@ -16,7 +16,7 @@
 
 ---
 
-## <img src="https://cdn.simpleicons.org/github/181717" width="22" alt="About"> ما هو Site-؟
+## <img src="https://cdn.simpleicons.org/github/181717" width="21" alt="About"> ما هو Site-؟
 
 ببساطة:
 
@@ -33,26 +33,29 @@
  ↓
 Site-
  ↓
-🏓 البوت يرد
+البوت يرد
 ```
 
 لا تحتاج أن تعرف البرمجة حتى تفهم فكرة المشروع أو تتبع خطوات تشغيله.
 
 ---
 
-## <img src="https://cdn.simpleicons.org/rocket/EA4B71" width="22" alt="How"> كيف يعمل البوت؟
+## <img src="https://cdn.simpleicons.org/discord/5865F2" width="21" alt="How"> كيف يعمل البوت؟
 
 هناك 3 أشياء أساسية:
 
 ### 1. Discord
+
 هو المكان الذي يوجد فيه البوت والسيرفر.
 
 ### 2. Python
+
 هي لغة البرمجة التي كُتب بها البوت.
 
 يمكن اعتبار Python هي **اللغة التي يفهم بها الكمبيوتر تعليمات البوت**.
 
 ### 3. discord.py
+
 هذه مكتبة تساعد Python على التواصل مع Discord.
 
 بشكل مبسط:
@@ -69,9 +72,9 @@ bot.py
 
 ---
 
-## <img src="https://cdn.simpleicons.org/discord/5865F2" width="22" alt="Commands"> ماذا يفعل كل أمر؟
+## <img src="https://cdn.simpleicons.org/discord/5865F2" width="21" alt="Commands"> ماذا يفعل كل أمر؟
 
-### `/ping`
+### <img src="https://cdn.simpleicons.org/discord/5865F2" width="18" alt="Ping"> `/ping`
 
 يختبر هل البوت يستجيب أم لا.
 
@@ -80,46 +83,46 @@ bot.py
 ```
 /ping
 ↓
-🏓 البوت يرد
+البوت يرد
 ```
 
 ---
 
-### `/server`
+### <img src="https://cdn.simpleicons.org/serverless/FD5750" width="18" alt="Server"> `/server`
 
 يعرض معلومات عن السيرفر الذي تستخدم فيه الأمر.
 
 ---
 
-### `/user`
+### <img src="https://cdn.simpleicons.org/github/181717" width="18" alt="User"> `/user`
 
 يعرض معلومات عن المستخدم.
 
 ---
 
-### `/avatar`
+### <img src="https://cdn.simpleicons.org/googlephotos/4285F4" width="18" alt="Avatar"> `/avatar`
 
 يعرض صورة المستخدم.
 
 ---
 
-### `/help`
+### <img src="https://cdn.simpleicons.org/readthedocs/8CA1AF" width="18" alt="Help"> `/help`
 
 يعرض قائمة الأوامر الموجودة في البوت.
 
 ---
 
-## <img src="https://cdn.simpleicons.org/python/3776AB" width="22" alt="Tech"> ما هي الأشياء المستخدمة؟
+## <img src="https://cdn.simpleicons.org/python/3776AB" width="21" alt="Tech"> ما هي الأشياء المستخدمة؟
 
-### 🐍 Python
+### <img src="https://cdn.simpleicons.org/python/3776AB" width="18" alt="Python"> Python
 
 لغة البرمجة المستخدمة لكتابة البوت.
 
-### Discord.py
+### <img src="https://cdn.simpleicons.org/discord/5865F2" width="18" alt="discord.py"> discord.py
 
 مكتبة تجعل Python قادرة على التعامل مع Discord.
 
-### `.env`
+### <img src="https://cdn.simpleicons.org/dotenv/ECD53F" width="18" alt=".env"> `.env`
 
 ملف خاص لحفظ المعلومات السرية مثل **Bot Token**.
 
@@ -127,7 +130,7 @@ bot.py
 
 ---
 
-## <img src="https://cdn.simpleicons.org/files/4A90E2" width="22" alt="Files"> شرح ملفات المشروع
+## <img src="https://cdn.simpleicons.org/files/4A90E2" width="21" alt="Files"> شرح ملفات المشروع
 
 ```
 Site-/
@@ -141,7 +144,7 @@ Site-/
 
 ### `bot.py`
 
-⭐ **أهم ملف في المشروع.**
+**أهم ملف في المشروع.**
 
 يحتوي على كود البوت والأوامر وطريقة عمله.
 
@@ -191,7 +194,7 @@ pip install -r requirements.txt
 
 ---
 
-## <img src="https://cdn.simpleicons.org/rocket/EA4B71" width="22" alt="Install"> طريقة تشغيل البوت من الصفر
+## <img src="https://cdn.simpleicons.org/python/3776AB" width="21" alt="Install"> طريقة تشغيل البوت من الصفر
 
 ### قبل البداية
 
@@ -291,7 +294,7 @@ YOUR_BOT_TOKEN
 
 ---
 
-## <img src="https://cdn.simpleicons.org/discord/5865F2" width="22" alt="Bot"> من أين أحصل على Bot Token؟
+## <img src="https://cdn.simpleicons.org/discord/5865F2" width="21" alt="Bot"> من أين أحصل على Bot Token؟
 
 من **Discord Developer Portal**.
 
@@ -307,7 +310,7 @@ Bot
 Token
 ```
 
-⚠️ التوكن **سري جدًا**.
+التوكن **سري جدًا**.
 
 لا ترسله في:
 
@@ -321,7 +324,7 @@ Token
 
 ---
 
-## <img src="https://cdn.simpleicons.org/terminal/4D4D4D" width="22" alt="Start"> الخطوة 5 — تشغيل البوت
+## <img src="https://cdn.simpleicons.org/gnubash/4EAA25" width="21" alt="Start"> الخطوة 5 — تشغيل البوت
 
 بعد تجهيز كل شيء، اكتب:
 
@@ -333,7 +336,7 @@ python bot.py
 
 ---
 
-## <img src="https://cdn.simpleicons.org/letsencrypt/003A70" width="22" alt="Security"> 🔐 أخطاء شائعة
+## <img src="https://cdn.simpleicons.org/letsencrypt/003A70" width="21" alt="Security"> أخطاء شائعة
 
 ### المشكلة: `python` غير معروف
 
@@ -367,7 +370,7 @@ python bot.py
 
 ---
 
-## <img src="https://cdn.simpleicons.org/github/181717" width="22" alt="GitHub"> GitHub للمبتدئين
+## <img src="https://cdn.simpleicons.org/github/181717" width="21" alt="GitHub"> GitHub للمبتدئين
 
 إذا كنت لا تعرف GitHub، فببساطة:
 
@@ -381,7 +384,7 @@ python bot.py
 
 ---
 
-## <img src="https://cdn.simpleicons.org/githubactions/2088FF" width="22" alt="Future"> ماذا يمكن إضافة للمشروع؟
+## <img src="https://cdn.simpleicons.org/githubactions/2088FF" width="21" alt="Future"> ماذا يمكن إضافة للمشروع؟
 
 يمكن تطوير Site- لاحقًا بإضافة:
 
@@ -396,15 +399,15 @@ python bot.py
 
 ---
 
-## <img src="https://cdn.simpleicons.org/checkmarx/54B848" width="22" alt="Status"> حالة المشروع
+## <img src="https://cdn.simpleicons.org/checkmarx/54B848" width="21" alt="Status"> حالة المشروع
 
-**🟢 جاهز للتشغيل والتطوير**
+**جاهز للتشغيل والتطوير**
 
 هذا المشروع مناسب أيضًا كقاعدة تتعلم منها طريقة بناء بوت Discord.
 
 ---
 
-## <img src="https://cdn.simpleicons.org/github/181717" width="22" alt="Contribution"> المساهمة
+## <img src="https://cdn.simpleicons.org/github/181717" width="21" alt="Contribution"> المساهمة
 
 إذا كنت مطورًا وتريد تطوير المشروع:
 
@@ -416,7 +419,7 @@ python bot.py
 ---
 
 <p align="center">
-  <img src="https://cdn.simpleicons.org/discord/5865F2" width="24" alt="Discord">
+  <img src="https://cdn.simpleicons.org/discord/5865F2" width="23" alt="Discord">
   <strong> Site-</strong><br>
   Built with Python & discord.py
 </p>
