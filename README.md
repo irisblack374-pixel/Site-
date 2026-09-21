@@ -579,6 +579,36 @@ python bot.py
 
 ---
 
+## <img src="https://raw.githubusercontent.com/irisblack374-pixel/Site-/main/assets/icons/site.svg" width="28" align="absmiddle"> للمطور: استخدام المشروع من الآخرين
+
+إذا قام شخص آخر بتشغيل نسخة Site- الخاصة به، يمكنك تفعيل نظام اختياري لمعرفة الاستخدام العام واستقبال الملاحظات.
+
+النظام لا يرسل Discord User ID أو أسماء المستخدمين أو محتوى الرسائل. عند تفعيله، يرسل إحصائيات مجمعة مثل عدد السيرفرات وعدد مرات استخدام الأوامر، بالإضافة إلى الرسائل التي يرسلها المستخدم عبر `/feedback`.
+
+### الإعداد
+
+أضف إلى `.env`:
+
+```env
+TELEMETRY_ENABLED=true
+TELEMETRY_WEBHOOK_URL=YOUR_DISCORD_WEBHOOK_URL
+```
+
+إذا بقي `TELEMETRY_ENABLED=false` أو لم يتم وضع Webhook، فلن يتم إرسال أي Telemetry.
+
+> إذا كنت توزع المشروع على الآخرين، وضّح لهم أن Telemetry اختيارية قبل تفعيلها، ولا تستخدم Webhook خاصًا بك دون إخبارهم.
+
+### ماذا تحصل عليه؟
+
+- عدد السيرفرات التي يعمل فيها البوت وقت التقرير.
+- عدد استخدامات الأوامر منذ آخر تقرير.
+- مدة تشغيل البوت.
+- Feedback يرسله المستخدم عبر `/feedback`.
+
+التقارير الدورية محدودة زمنيًا، ولا يتم جمع User ID أو Server ID ضمن التقرير.
+
+---
+
 ## <img src="https://raw.githubusercontent.com/irisblack374-pixel/Site-/main/assets/icons/site.svg" width="28" align="absmiddle"> QUICK START
 
 ```bash
