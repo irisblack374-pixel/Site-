@@ -1,6 +1,7 @@
 import os
 import time
 import discord
+from telemetry import record_command, send_feedback, send_usage_report
 from discord import app_commands
 from dotenv import load_dotenv
 
@@ -21,6 +22,7 @@ async def on_connect():
         await tree.sync()
         bot._commands_synced = True
         print("Slash commands synced")
+    await send_usage_report(len(bot.guilds))
 
 
 @bot.event
@@ -141,6 +143,24 @@ async def feedback(interaction: discord.Interaction, message: str):
         "تم إرسال اقتراحك للمطور. شكرًا لك!", ephemeral=True
     )
 
+
+
+@tree.command(name="feedback", description="إرسال اقتراح أو ملاحظة للمطور")
+@app_commands.describe(message="اقتراحك أو الملاحظة")
+async def feedback(interaction: discord.Interaction, message: str):
+    if len(message.strip()) < 3:
+        return await interaction.response.send_message(
+            "❌ اكتب ملاحظة أطول قليلًا.", ephemeral=True
+        )
+    sent = await send_feedback(message.strip())
+    if sent:
+        await interaction.response.send_message(
+            "تم إرسال ملاحظتك للمطور، شكرًا لك.", ephemeral=True
+        )
+    else:
+        await interaction.response.send_message(
+            "ميزة الملاحظات غير مفعلة حاليًا.", ephemeral=True
+        )
 
 @tree.command(name="clear", description="حذف رسائل من القناة")
 @app_commands.describe(amount="عدد الرسائل")
