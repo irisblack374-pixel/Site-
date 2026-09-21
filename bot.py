@@ -1,4 +1,5 @@
 import os
+import time
 import discord
 from discord import app_commands
 from dotenv import load_dotenv
@@ -12,7 +13,7 @@ tree = app_commands.CommandTree(bot)
 
 @bot.event
 async def on_ready():
-    print(f"Logged in as {bot.user}")
+    print(f"Logged in as {bot.user} | Servers: {len(bot.guilds)}")
 
 @bot.event
 async def on_connect():
@@ -20,6 +21,30 @@ async def on_connect():
         await tree.sync()
         bot._commands_synced = True
         print("Slash commands synced")
+
+
+@bot.event
+async def on_app_command_completion(interaction: discord.Interaction, command: app_commands.Command):
+    record_command(command.name)
+
+
+@bot.tree.error
+async def on_app_command_error(interaction: discord.Interaction, error: app_commands.AppCommandError):
+    global error_count
+    error_count += 1
+    print(f"[COMMAND ERROR] {type(error).__name__}: {error}")
+    message = "حدث خطأ أثناء تنفيذ الأمر. حاول مرة ثانية."
+    if isinstance(error, app_commands.MissingPermissions):
+        message = "❌ ما عندك الصلاحية المطلوبة لهذا الأمر."
+    elif isinstance(error, app_commands.CheckFailure):
+        message = "❌ لا يمكن تنفيذ الأمر هنا."
+    try:
+        if interaction.response.is_done():
+            await interaction.followup.send(message, ephemeral=True)
+        else:
+            await interaction.response.send_message(message, ephemeral=True)
+    except discord.HTTPException:
+        pass
 
 @tree.command(name="ping", description="عرض سرعة البوت")
 async def ping(interaction: discord.Interaction):
@@ -64,7 +89,56 @@ async def help_command(interaction: discord.Interaction):
         "`/clear` — حذف رسائل\n"
         "`/kick` — طرد عضو\n"
         "`/ban` — حظر عضو\n"
-        "`/unban` — فك حظر بواسطة ID"
+        "`/unban` — فك حظر بواسطة ID\n"
+        "`/stats` — إحصائيات البوت\n"
+        "`/feedback` — إرسال اقتراح للمطور"
+    )
+
+
+@tree.command(name="stats", description="إحصائيات عامة عن البوت")
+async def stats(interaction: discord.Interaction):
+    uptime = int(time.time() - started_at)
+    hours, rem = divmod(uptime, 3600)
+    minutes, seconds = divmod(rem, 60)
+    top_commands = sorted(command_usage.items(), key=lambda item: item[1], reverse=True)[:5]
+    commands_text = "\n".join(
+        f"/{name} — {count}"
+        for name, count in top_commands
+    ) or "لا توجد أوامر مسجلة بعد."
+    await interaction.response.send_message(
+        "**إحصائيات Site-**\n"
+        f"السيرفرات: **{len(bot.guilds)}**\n"
+        f"الأوامر المسجلة منذ التشغيل: **{sum(command_usage.values())}**\n"
+        f"الأخطاء منذ التشغيل: **{error_count}**\n"
+        f"مدة التشغيل: **{hours}h {minutes}m {seconds}s**\n\n"
+        f"**أكثر الأوامر استخدامًا**\n{commands_text}"
+    )
+
+
+@tree.command(name="feedback", description="إرسال اقتراح للمطور")
+@app_commands.describe(message="اقتراحك أو ملاحظتك")
+async def feedback(interaction: discord.Interaction, message: str):
+    if not OWNER_ID:
+        return await interaction.response.send_message(
+            "ميزة الاقتراحات غير مفعلة حاليًا.", ephemeral=True
+        )
+    owner = bot.get_user(OWNER_ID)
+    if owner is None:
+        try:
+            owner = await bot.fetch_user(OWNER_ID)
+        except discord.HTTPException:
+            owner = None
+    if owner is not None:
+        try:
+            await owner.send(
+                f"Feedback من {interaction.user} ({interaction.user.id})\n"
+                f"السيرفر: {interaction.guild.name if interaction.guild else 'DM'}\n"
+                f"الاقتراح: {message}"
+            )
+        except discord.HTTPException:
+            pass
+    await interaction.response.send_message(
+        "تم إرسال اقتراحك للمطور. شكرًا لك!", ephemeral=True
     )
 
 
