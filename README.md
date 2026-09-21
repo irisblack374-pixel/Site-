@@ -40,6 +40,107 @@
 
 ---
 
+
+
+---
+
+# 🌍 Languages / اللغات
+
+**English:** This project includes an English overview below and Arabic documentation. The bot commands themselves are language-independent Slash Commands.
+
+**العربية:** يحتوي المشروع على شرح بالعربية والإنجليزية. أوامر البوت تعمل كـ Slash Commands ولا تعتمد على لغة Discord عند التشغيل.
+
+## 🇺🇸 English
+
+### What is Site-?
+
+**Site-** is an open-source Discord bot built with **Python** and **discord.py**. It provides useful information and moderation commands while keeping the code simple enough for beginners to understand and modify.
+
+### Features
+
+- Slash Commands
+- Ping / latency information
+- Server information
+- User information
+- Avatar display
+- Help command
+- Message clearing
+- Kick and ban moderation
+- Unban by User ID
+- Optional feedback system
+- Optional privacy-friendly usage telemetry
+
+### Quick Start
+
+```bash
+pip install -r requirements.txt
+python bot.py
+```
+
+Create a `.env` file:
+
+```env
+DISCORD_TOKEN=YOUR_BOT_TOKEN
+```
+
+Then start the bot with `python bot.py`.
+
+### Supported Languages
+
+The README is available in **Arabic and English**. The current bot commands are not a full automatic translation system.
+
+If you want the bot itself to support multiple languages, the project can be extended with a localization system so responses can be translated into languages such as Arabic, English, Spanish, French, German, Turkish and more.
+
+---
+
+# 🇸🇦 العربية
+
+### ما هو Site-؟
+
+**Site-** هو بوت Discord مفتوح المصدر مكتوب بلغة **Python** باستخدام **discord.py**. يحتوي على أوامر معلومات وإدارة أساسية، مع تصميم كود بسيط يسهل على المبتدئين فهمه وتعديله.
+
+### المميزات
+
+- أوامر Slash
+- عرض سرعة الاستجابة
+- معلومات السيرفر
+- معلومات الأعضاء
+- عرض الصور الشخصية
+- أمر المساعدة
+- حذف الرسائل
+- Kick و Ban
+- فك الحظر باستخدام User ID
+- نظام Feedback اختياري
+- نظام إحصائيات استخدام اختياري مع مراعاة الخصوصية
+
+### التشغيل السريع
+
+```bash
+pip install -r requirements.txt
+python bot.py
+```
+
+أنشئ ملف `.env`:
+
+```env
+DISCORD_TOKEN=YOUR_BOT_TOKEN
+```
+
+ثم شغّل:
+
+```bash
+python bot.py
+```
+
+### الترجمة
+
+شرح المشروع متوفر بالعربية والإنجليزية.
+
+أما **البوت نفسه** فالإصدار الحالي لا يحتوي على نظام ترجمة تلقائي كامل لكل اللغات. يمكن إضافة نظام Localization يجعل رسائل البوت تظهر حسب اللغة التي يختارها المستخدم أو السيرفر.
+
+**لغات يمكن دعمها مستقبلًا:** العربية، الإنجليزية، الإسبانية، الفرنسية، الألمانية، التركية وغيرها.
+
+
 ## <img src="https://raw.githubusercontent.com/irisblack374-pixel/Site-/main/assets/icons/site.svg" width="28" align="absmiddle"> ما هو البوت؟
 
 **Site-** هو بوت Discord مكتوب بلغة **Python** باستخدام مكتبة **discord.py**.
