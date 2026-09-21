@@ -78,33 +78,17 @@ bot.py
 
 يختبر هل البوت يستجيب أم لا.
 
-**مثال:**
-
-```
-/ping
-↓
-البوت يرد
-```
-
----
-
 ### <img src="https://cdn.simpleicons.org/serverless/FD5750" width="18" alt="Server"> `/server`
 
-يعرض معلومات عن السيرفر الذي تستخدم فيه الأمر.
-
----
+يعرض معلومات عن السيرفر.
 
 ### <img src="https://cdn.simpleicons.org/github/181717" width="18" alt="User"> `/user`
 
 يعرض معلومات عن المستخدم.
 
----
-
 ### <img src="https://cdn.simpleicons.org/googlephotos/4285F4" width="18" alt="Avatar"> `/avatar`
 
 يعرض صورة المستخدم.
-
----
 
 ### <img src="https://cdn.simpleicons.org/readthedocs/8CA1AF" width="18" alt="Help"> `/help`
 
@@ -148,49 +132,21 @@ Site-/
 
 يحتوي على كود البوت والأوامر وطريقة عمله.
 
----
-
 ### `requirements.txt`
 
 يخبر Python بالمكتبات التي يحتاجها المشروع.
-
-بدل تثبيت كل مكتبة واحدة واحدة، تستخدم:
-
-```bash
-pip install -r requirements.txt
-```
-
----
 
 ### `.env.example`
 
 ملف مثال يوضح الإعدادات التي يحتاجها المشروع.
 
-منه تنشئ ملف:
-
-```
-.env
-```
-
----
-
 ### `.gitignore`
 
-يخبر GitHub عن الملفات التي لا نريد رفعها للمستودع.
-
-ومن أهم الأشياء التي يجب ألا تظهر على GitHub:
-
-```
-.env
-```
-
----
+يخبر GitHub عن الملفات التي لا نريد رفعها، مثل `.env`.
 
 ### `README.md`
 
-هذا الملف الذي تقرأه الآن.
-
-وظيفته شرح المشروع وطريقة تشغيله.
+صفحة شرح المشروع التي تقرأها الآن.
 
 ---
 
@@ -206,179 +162,118 @@ pip install -r requirements.txt
 - Bot Token
 - ملفات المشروع
 
-> إذا كنت تستخدم الجوال فقط، فالتشغيل يعتمد على منصة استضافة تدعم Python؛ وجود الملفات وحده لا يشغل البوت.
+> إذا كنت تستخدم الجوال فقط، فالتشغيل يحتاج إلى منصة استضافة تدعم Python.
 
----
+### 1 — تثبيت Python
 
-### الخطوة 1 — تثبيت Python
-
-ثبّت **Python 3.11 أو أحدث** على الكمبيوتر.
-
-بعد التثبيت، افتح Terminal أو CMD واكتب:
+بعد تثبيت Python، افتح Terminal أو CMD واكتب:
 
 ```bash
 python --version
 ```
 
-إذا ظهر رقم مثل:
+إذا ظهر مثل:
 
 ```
 Python 3.11.x
 ```
 
-فهذا يعني أن Python مثبت بشكل صحيح.
+فـ Python مثبت بشكل صحيح.
 
----
-
-### الخطوة 2 — افتح مجلد المشروع
+### 2 — افتح مجلد المشروع
 
 ضع ملفات Site- داخل مجلد واحد.
 
-يجب أن ترى شيئًا قريبًا من:
+### 3 — تثبيت المكتبات
 
-```
-Site-/
-├── bot.py
-├── requirements.txt
-├── .env.example
-└── README.md
-```
-
----
-
-### الخطوة 3 — تثبيت المكتبات
-
-افتح Terminal داخل مجلد المشروع واكتب:
+داخل مجلد المشروع اكتب:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-هذا الأمر يعني:
+هذا يعني: **ثبّت المكتبات التي يحتاجها البوت.**
 
-**"ثبّت كل المكتبات التي يحتاجها البوت."**
+### 4 — إنشاء ملف `.env`
 
-انتظر حتى ينتهي التثبيت.
-
----
-
-### الخطوة 4 — إنشاء ملف .env
-
-خذ:
-
-```
-.env.example
-```
-
-وانسخه أو أعد تسميته إلى:
+انسخ `.env.example` إلى ملف جديد باسم:
 
 ```
 .env
 ```
 
-ثم افتحه.
-
-ضع داخله توكن البوت بالشكل التالي:
+ثم ضع داخله:
 
 ```env
 DISCORD_TOKEN=YOUR_BOT_TOKEN
 ```
 
-استبدل:
+واستبدل `YOUR_BOT_TOKEN` بالتوكن الحقيقي.
 
-```
-YOUR_BOT_TOKEN
+### 5 — تشغيل البوت
+
+```bash
+python bot.py
 ```
 
-بالتوكن الحقيقي الخاص بالبوت.
+إذا بدأ البوت بالاتصال بـ Discord، فالمشروع يعمل.
 
 ---
 
-## <img src="https://cdn.simpleicons.org/discord/5865F2" width="21" alt="Bot"> من أين أحصل على Bot Token؟
+## <img src="https://cdn.simpleicons.org/discord/5865F2" width="21" alt="Bot"> Bot Token
 
-من **Discord Developer Portal**.
-
-بشكل عام:
+تحصل عليه من **Discord Developer Portal**:
 
 ```
 Discord Developer Portal
         ↓
-اختر تطبيق البوت
+التطبيق
         ↓
 Bot
         ↓
 Token
 ```
 
-التوكن **سري جدًا**.
+التوكن مثل **كلمة مرور البوت**.
 
-لا ترسله في:
+لا تضعه في GitHub أو Discord أو أي مكان عام.
 
-- GitHub
-- Discord
-- Screenshots
-- رسائل عامة
-- أي مكان يراه الآخرون
-
-إذا انكشف التوكن، قم بتغييره فورًا من إعدادات البوت.
-
----
-
-## <img src="https://cdn.simpleicons.org/gnubash/4EAA25" width="21" alt="Start"> الخطوة 5 — تشغيل البوت
-
-بعد تجهيز كل شيء، اكتب:
-
-```bash
-python bot.py
-```
-
-إذا لم تظهر مشكلة وبدأ البوت بالاتصال بـ Discord، فالمشروع يعمل.
+إذا انكشف، قم بتغييره فورًا من إعدادات البوت.
 
 ---
 
 ## <img src="https://cdn.simpleicons.org/letsencrypt/003A70" width="21" alt="Security"> أخطاء شائعة
 
-### المشكلة: `python` غير معروف
+### `python` غير معروف
 
-قد يكون Python غير مثبت أو غير مضاف إلى PATH.
+تأكد من تثبيت Python وإضافته إلى PATH.
 
-### المشكلة: المكتبة غير موجودة
+### مكتبة غير موجودة
 
-جرّب:
+شغّل:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### المشكلة: البوت لا يعمل
+### البوت لا يعمل
 
 تأكد من:
 
 1. التوكن صحيح.
 2. ملف `.env` موجود.
-3. اسم المتغير هو:
-
-```
-DISCORD_TOKEN
-```
-
-4. شغّلت:
-
-```bash
-python bot.py
-```
+3. اسم المتغير هو `DISCORD_TOKEN`.
+4. شغّلت `python bot.py`.
 
 ---
 
 ## <img src="https://cdn.simpleicons.org/github/181717" width="21" alt="GitHub"> GitHub للمبتدئين
 
-إذا كنت لا تعرف GitHub، فببساطة:
-
-**Repository / مستودع** = مكان يحفظ ملفات المشروع.
+**Repository** = مكان يحفظ ملفات المشروع.
 
 **README** = صفحة شرح المشروع.
 
-**Commit** = حفظ تغيير جديد في المشروع.
+**Commit** = حفظ تغيير جديد.
 
 **Clone** = تنزيل نسخة من المشروع على جهازك.
 
@@ -386,7 +281,7 @@ python bot.py
 
 ## <img src="https://cdn.simpleicons.org/githubactions/2088FF" width="21" alt="Future"> ماذا يمكن إضافة للمشروع؟
 
-يمكن تطوير Site- لاحقًا بإضافة:
+يمكن تطوير Site- بإضافة:
 
 - أوامر إدارة السيرفر
 - نظام تذاكر
@@ -395,26 +290,28 @@ python bot.py
 - إحصائيات
 - إعدادات خاصة لكل سيرفر
 - سجلات Logs
-- نظام ترحيب للأعضاء
+- نظام ترحيب
 
 ---
 
 ## <img src="https://cdn.simpleicons.org/checkmarx/54B848" width="21" alt="Status"> حالة المشروع
 
-**جاهز للتشغيل والتطوير**
-
-هذا المشروع مناسب أيضًا كقاعدة تتعلم منها طريقة بناء بوت Discord.
+**جاهز للتشغيل والتطوير.**
 
 ---
 
-## <img src="https://cdn.simpleicons.org/github/181717" width="21" alt="Contribution"> المساهمة
+## <img src="https://cdn.simpleicons.org/github/181717" width="21" alt="Copyright"> حقوق المشروع
 
-إذا كنت مطورًا وتريد تطوير المشروع:
+<p align="center">
+  <strong>© 2026 irisblack374-pixel</strong><br>
+  جميع الحقوق محفوظة.
+</p>
 
-1. انسخ المشروع.
-2. عدّل الكود.
-3. اختبر التعديلات.
-4. يمكنك اقتراح تحسينات للمشروع.
+يُمنع نسخ المشروع أو إعادة نشره أو نسبه إلى شخص آخر دون إذن صاحب المشروع.
+
+<a href="https://github.com/irisblack374-pixel">
+  <img src="https://img.shields.io/badge/GitHub-irisblack374--pixel-181717?logo=github&logoColor=white" alt="GitHub">
+</a>
 
 ---
 
