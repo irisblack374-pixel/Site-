@@ -7,6 +7,39 @@
 
 ---
 
+<div align="center">
+
+[![GitHub](https://img.shields.io/badge/GitHub-Site---111827?style=for-the-badge&logo=github)](https://github.com/irisblack374-pixel/Site-)
+[![Python](https://img.shields.io/badge/Python-3.x-111827?style=for-the-badge&logo=python)](https://www.python.org/)
+[![discord.py](https://img.shields.io/badge/discord.py-2.x-111827?style=for-the-badge&logo=discord)](https://discordpy.readthedocs.io/)
+
+### BLACK CAT • BLUE NEON • CODE
+
+**بوت Discord مفتوح المصدر، بسيط للمبتدئين وقابل للتطوير.**
+
+[**★ Star المشروع**](https://github.com/irisblack374-pixel/Site-) · [**Fork**](https://github.com/irisblack374-pixel/Site-/fork) · [**Issues**](https://github.com/irisblack374-pixel/Site-/issues)
+
+</div>
+
+> **تريد استخدامه؟** نزّل المشروع، أنشئ بوت Discord، ضع الـ Token في `.env` ثم شغّله. الشرح الكامل موجود بالأسفل.
+
+## لماذا قد يهتم الناس بالمشروع؟
+
+- أوامر Slash جاهزة للاستخدام.
+- أوامر معلومات وإدارة أساسية.
+- كود Python واضح وسهل التعديل.
+- إعداد مناسب للمبتدئين.
+- توثيق خطوة بخطوة.
+- نظام Feedback اختياري.
+- مشروع مفتوح المصدر يمكن تطويره وإضافة أوامر جديدة له.
+
+### ساعد المشروع على الوصول لناس أكثر
+
+إذا استفدت من المشروع، يمكنك **Star** للمستودع أو مشاركة الرابط مع شخص يبحث عن Discord Bot بـ Python. الـ Star لا يثبت البوت تلقائيًا، لكنه يساعد الآخرين على اكتشاف المشروع.
+
+
+---
+
 ## <img src="https://raw.githubusercontent.com/irisblack374-pixel/Site-/main/assets/icons/site.svg" width="28" align="absmiddle"> ما هو البوت؟
 
 **Site-** هو بوت Discord مكتوب بلغة **Python** باستخدام مكتبة **discord.py**.
