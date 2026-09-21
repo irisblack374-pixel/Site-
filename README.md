@@ -31,7 +31,7 @@
 
 ## <img src="https://raw.githubusercontent.com/irisblack374-pixel/Site-/main/assets/icons/commands.svg" width="28" align="absmiddle"> الأوامر بالتفصيل
 
-### 🏓 `/ping` — سرعة البوت
+### <img src="https://raw.githubusercontent.com/irisblack374-pixel/Site-/main/assets/icons/commands.svg" width="20" align="absmiddle"> `/ping` — سرعة البوت
 
 يعرض سرعة استجابة البوت بالـ milliseconds.
 
@@ -47,7 +47,7 @@ Pong! 82ms
 
 ---
 
-### 🏠 `/server` — معلومات السيرفر
+### <img src="https://raw.githubusercontent.com/irisblack374-pixel/Site-/main/assets/icons/site.svg" width="20" align="absmiddle"> `/server` — معلومات السيرفر
 
 يعرض معلومات أساسية عن السيرفر الذي استخدمت فيه الأمر:
 
@@ -59,7 +59,7 @@ Pong! 82ms
 
 ---
 
-### 👤 `/user` — معلومات عضو
+### <img src="https://raw.githubusercontent.com/irisblack374-pixel/Site-/main/assets/icons/cat.svg" width="20" align="absmiddle"> `/user` — معلومات عضو
 
 يعرض معلومات العضو الذي تختاره.
 
@@ -81,7 +81,7 @@ Pong! 82ms
 
 ---
 
-### 🖼️ `/avatar` — صورة العضو
+### <img src="https://raw.githubusercontent.com/irisblack374-pixel/Site-/main/assets/icons/site.svg" width="20" align="absmiddle"> `/avatar` — صورة العضو
 
 يعرض رابط صورة الحساب للعضو الذي تختاره.
 
@@ -95,7 +95,7 @@ Pong! 82ms
 
 ---
 
-### 🤖 `/help` — قائمة الأوامر
+### <img src="https://raw.githubusercontent.com/irisblack374-pixel/Site-/main/assets/icons/ai.svg" width="20" align="absmiddle"> `/help` — قائمة الأوامر
 
 يعرض لك قائمة مختصرة بأوامر البوت الموجودة حاليًا.
 
@@ -107,7 +107,7 @@ Pong! 82ms
 
 ---
 
-### 🧹 `/clear` — حذف رسائل
+### <img src="https://raw.githubusercontent.com/irisblack374-pixel/Site-/main/assets/icons/commands.svg" width="20" align="absmiddle"> `/clear` — حذف رسائل
 
 يستخدم لحذف عدد محدد من الرسائل في القناة.
 
@@ -119,11 +119,11 @@ Pong! 82ms
 
 يمكن حذف من **1 إلى 100 رسالة** في العملية الواحدة.
 
-🔐 الأمر مخصص لمن لديهم صلاحية **Manage Messages**.
+<img src="https://raw.githubusercontent.com/irisblack374-pixel/Site-/main/assets/icons/site.svg" width="20" align="absmiddle"> الأمر مخصص لمن لديهم صلاحية **Manage Messages**.
 
 ---
 
-### 👢 `/kick` — طرد عضو
+### <img src="https://raw.githubusercontent.com/irisblack374-pixel/Site-/main/assets/icons/site.svg" width="20" align="absmiddle"> `/kick` — طرد عضو
 
 يطرد عضوًا من السيرفر مع إمكانية كتابة سبب.
 
@@ -133,11 +133,11 @@ Pong! 82ms
 /kick member: @User reason: مخالفة القوانين
 ```
 
-🔐 يحتاج المستخدم إلى صلاحية **Kick Members**.
+<img src="https://raw.githubusercontent.com/irisblack374-pixel/Site-/main/assets/icons/site.svg" width="20" align="absmiddle"> يحتاج المستخدم إلى صلاحية **Kick Members**.
 
 ---
 
-### 🔨 `/ban` — حظر عضو
+### <img src="https://raw.githubusercontent.com/irisblack374-pixel/Site-/main/assets/icons/site.svg" width="20" align="absmiddle"> `/ban` — حظر عضو
 
 يحظر عضوًا من السيرفر مع إمكانية كتابة سبب.
 
@@ -147,11 +147,11 @@ Pong! 82ms
 /ban member: @User reason: مخالفة القوانين
 ```
 
-🔐 يحتاج المستخدم إلى صلاحية **Ban Members**.
+<img src="https://raw.githubusercontent.com/irisblack374-pixel/Site-/main/assets/icons/site.svg" width="20" align="absmiddle"> يحتاج المستخدم إلى صلاحية **Ban Members**.
 
 ---
 
-### 🔓 `/unban` — فك حظر
+### <img src="https://raw.githubusercontent.com/irisblack374-pixel/Site-/main/assets/icons/site.svg" width="20" align="absmiddle"> `/unban` — فك حظر
 
 يفك حظر مستخدم باستخدام **User ID**.
 
@@ -161,7 +161,7 @@ Pong! 82ms
 /unban user_id: 123456789012345678
 ```
 
-🔐 يحتاج المستخدم إلى صلاحية **Ban Members**.
+<img src="https://raw.githubusercontent.com/irisblack374-pixel/Site-/main/assets/icons/site.svg" width="20" align="absmiddle"> يحتاج المستخدم إلى صلاحية **Ban Members**.
 
 ---
 
@@ -169,10 +169,10 @@ Pong! 82ms
 
 | التقنية | وظيفتها |
 |---|---|
-| 🐍 Python | لغة برمجة البوت |
+| <img src="https://raw.githubusercontent.com/irisblack374-pixel/Site-/main/assets/icons/python.svg" width="20" align="absmiddle"> Python | لغة برمجة البوت |
 | 🔷 discord.py | ربط Python مع Discord |
-| ⚙️ python-dotenv | قراءة التوكن من ملف `.env` |
-| 💬 Slash Commands | الأوامر التي تبدأ بـ `/` |
+| <img src="https://raw.githubusercontent.com/irisblack374-pixel/Site-/main/assets/icons/site.svg" width="20" align="absmiddle"> python-dotenv | قراءة التوكن من ملف `.env` |
+| <img src="https://raw.githubusercontent.com/irisblack374-pixel/Site-/main/assets/icons/commands.svg" width="20" align="absmiddle"> Slash Commands | الأوامر التي تبدأ بـ `/` |
 
 ---
 
@@ -187,7 +187,7 @@ Site-/
 └── README.md
 ```
 
-### 📄 `bot.py`
+### <img src="https://raw.githubusercontent.com/irisblack374-pixel/Site-/main/assets/icons/site.svg" width="20" align="absmiddle"> `bot.py`
 
 هذا هو **ملف البوت الرئيسي**.
 
@@ -199,7 +199,7 @@ Site-/
 - رسائل الاستجابة
 - تشغيل البوت
 
-### 📦 `requirements.txt`
+### <img src="https://raw.githubusercontent.com/irisblack374-pixel/Site-/main/assets/icons/site.svg" width="20" align="absmiddle"> `requirements.txt`
 
 هذا الملف يخبر Python بالمكتبات التي يحتاجها المشروع.
 
@@ -210,7 +210,7 @@ discord.py
 python-dotenv
 ```
 
-### 🔐 `.env`
+### <img src="https://raw.githubusercontent.com/irisblack374-pixel/Site-/main/assets/icons/site.svg" width="20" align="absmiddle"> `.env`
 
 هذا الملف مخصص لوضع **Bot Token**.
 
@@ -222,17 +222,17 @@ DISCORD_TOKEN=ضع_توكن_البوت_هنا
 
 ⚠️ **لا ترسل التوكن لأي شخص ولا ترفعه إلى GitHub.**
 
-### 📖 `README.md`
+### <img src="https://raw.githubusercontent.com/irisblack374-pixel/Site-/main/assets/icons/site.svg" width="20" align="absmiddle"> `README.md`
 
 هذا الملف هو الشرح الموجود في GitHub.
 
 ---
 
-# 🚀 تشغيل البوت للمبتدئين
+# <img src="https://raw.githubusercontent.com/irisblack374-pixel/Site-/main/assets/icons/site.svg" width="20" align="absmiddle"> تشغيل البوت للمبتدئين
 
 إذا ما تعرف برمجة، اتبع الخطوات بالترتيب.
 
-## 1️⃣ ثبّت Python
+## <img src="https://raw.githubusercontent.com/irisblack374-pixel/Site-/main/assets/icons/commands.svg" width="20" align="absmiddle"> ثبّت Python
 
 حمّل Python من الموقع الرسمي:
 
@@ -254,7 +254,7 @@ Python 3.x.x
 
 ---
 
-## 2️⃣ حمّل المشروع
+## <img src="https://raw.githubusercontent.com/irisblack374-pixel/Site-/main/assets/icons/commands.svg" width="20" align="absmiddle"> حمّل المشروع
 
 من GitHub اضغط:
 
@@ -270,7 +270,7 @@ Site-
 
 ---
 
-## 3️⃣ افتح Terminal داخل مجلد المشروع
+## <img src="https://raw.githubusercontent.com/irisblack374-pixel/Site-/main/assets/icons/commands.svg" width="20" align="absmiddle"> افتح Terminal داخل مجلد المشروع
 
 افتح مجلد `Site-`.
 
@@ -286,7 +286,7 @@ README.md
 
 ---
 
-## 4️⃣ ثبّت المكتبات
+## <img src="https://raw.githubusercontent.com/irisblack374-pixel/Site-/main/assets/icons/commands.svg" width="20" align="absmiddle"> ثبّت المكتبات
 
 داخل Terminal اكتب:
 
@@ -306,7 +306,7 @@ Successfully installed
 
 ---
 
-## 5️⃣ أنشئ ملف `.env`
+## <img src="https://raw.githubusercontent.com/irisblack374-pixel/Site-/main/assets/icons/commands.svg" width="20" align="absmiddle"> أنشئ ملف `.env`
 
 داخل مجلد `Site-` أنشئ ملفًا اسمه بالضبط:
 
@@ -330,7 +330,7 @@ DISCORD_TOKEN=YOUR_BOT_TOKEN
 
 ---
 
-# 🔑 من أين أحصل على Bot Token؟
+# <img src="https://raw.githubusercontent.com/irisblack374-pixel/Site-/main/assets/icons/site.svg" width="20" align="absmiddle"> من أين أحصل على Bot Token؟
 
 اذهب إلى **Discord Developer Portal** وأنشئ Application ثم Bot.
 
@@ -346,7 +346,7 @@ DISCORD_TOKEN=YOUR_BOT_TOKEN
 
 ---
 
-# 🤖 إضافة البوت إلى السيرفر
+# <img src="https://raw.githubusercontent.com/irisblack374-pixel/Site-/main/assets/icons/ai.svg" width="20" align="absmiddle"> إضافة البوت إلى السيرفر
 
 بعد إنشاء البوت، تحتاج إلى دعوته إلى السيرفر.
 
@@ -372,7 +372,7 @@ URL Generator
 
 ---
 
-# ▶️ تشغيل البوت
+# <img src="https://raw.githubusercontent.com/irisblack374-pixel/Site-/main/assets/icons/site.svg" width="20" align="absmiddle"> تشغيل البوت
 
 بعد تثبيت المكتبات ووضع التوكن، افتح Terminal داخل مجلد المشروع واكتب:
 
@@ -390,7 +390,7 @@ Logged in as YOUR_BOT | Slash commands synced
 
 ---
 
-# 💬 كيف أستخدمه في Discord؟
+# <img src="https://raw.githubusercontent.com/irisblack374-pixel/Site-/main/assets/icons/commands.svg" width="20" align="absmiddle"> كيف أستخدمه في Discord؟
 
 افتح السيرفر الذي أضفت إليه البوت.
 
@@ -418,7 +418,7 @@ Logged in as YOUR_BOT | Slash commands synced
 
 ---
 
-# 🛠️ إذا الأوامر لا تظهر
+# <img src="https://raw.githubusercontent.com/irisblack374-pixel/Site-/main/assets/icons/site.svg" width="20" align="absmiddle"> إذا الأوامر لا تظهر
 
 جرّب هذه الأشياء بالترتيب:
 
@@ -439,7 +439,7 @@ bot
 applications.commands
 ```
 
-### 3. 🔐 تأكد من الصلاحيات
+### 3. <img src="https://raw.githubusercontent.com/irisblack374-pixel/Site-/main/assets/icons/site.svg" width="20" align="absmiddle"> تأكد من الصلاحيات
 
 أوامر الإدارة تحتاج صلاحيات Discord المناسبة.
 
@@ -454,7 +454,7 @@ Site-/
 └── requirements.txt
 ```
 
-### 5. 🔑 تأكد من التوكن
+### 5. <img src="https://raw.githubusercontent.com/irisblack374-pixel/Site-/main/assets/icons/site.svg" width="20" align="absmiddle"> تأكد من التوكن
 
 يجب أن يكون اسم المتغير بالضبط:
 
@@ -464,7 +464,7 @@ DISCORD_TOKEN
 
 ---
 
-# ❌ أشهر الأخطاء
+# <img src="https://raw.githubusercontent.com/irisblack374-pixel/Site-/main/assets/icons/site.svg" width="20" align="absmiddle"> أشهر الأخطاء
 
 ### `DISCORD_TOKEN غير موجود في ملف .env`
 
@@ -498,7 +498,7 @@ pip install -r requirements.txt
 
 ---
 
-### ❌ البوت Online لكن أمر الإدارة لا يعمل
+### <img src="https://raw.githubusercontent.com/irisblack374-pixel/Site-/main/assets/icons/site.svg" width="20" align="absmiddle"> البوت Online لكن أمر الإدارة لا يعمل
 
 تأكد من:
 
@@ -508,7 +508,7 @@ pip install -r requirements.txt
 
 ---
 
-# 🧠 كيف يعمل البوت من الداخل؟
+# <img src="https://raw.githubusercontent.com/irisblack374-pixel/Site-/main/assets/icons/ai.svg" width="20" align="absmiddle"> كيف يعمل البوت من الداخل؟
 
 الفكرة الأساسية:
 
@@ -536,16 +536,16 @@ Discord API
 
 عند تشغيل `bot.py`:
 
-**1. 🔐** يقرأ التوكن من `.env`  
+**1. <img src="https://raw.githubusercontent.com/irisblack374-pixel/Site-/main/assets/icons/site.svg" width="20" align="absmiddle">** يقرأ التوكن من `.env`  
 **2. 🔌** يتصل بـ Discord  
 **3. 🔄** يعمل مزامنة للأوامر  
-**4. 💬** يستقبل أوامر Slash  
-**5. ⚙️** ينفذ الأمر  
+**4. <img src="https://raw.githubusercontent.com/irisblack374-pixel/Site-/main/assets/icons/commands.svg" width="20" align="absmiddle">** يستقبل أوامر Slash  
+**5. <img src="https://raw.githubusercontent.com/irisblack374-pixel/Site-/main/assets/icons/site.svg" width="20" align="absmiddle">** ينفذ الأمر  
 **6. 📩** يرسل النتيجة إلى Discord
 
 ---
 
-# 👨‍💻 هل أحتاج أعرف البرمجة؟
+# <img src="https://raw.githubusercontent.com/irisblack374-pixel/Site-/main/assets/icons/python.svg" width="20" align="absmiddle"> هل أحتاج أعرف البرمجة؟
 
 **لا.**
 
@@ -565,7 +565,7 @@ python bot.py
 
 ---
 
-# 🛡️ أمان مهم جدًا
+# <img src="https://raw.githubusercontent.com/irisblack374-pixel/Site-/main/assets/icons/site.svg" width="20" align="absmiddle"> أمان مهم جدًا
 
 🚨 **لا تضع Bot Token داخل `bot.py`.**
 
