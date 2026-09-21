@@ -1,173 +1,151 @@
-# 🤖 Site- Discord Bot
+# 🤖 Site-
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Python-3.11+-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python">
-  <img src="https://img.shields.io/badge/discord.py-2.x-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="discord.py">
-  <img src="https://img.shields.io/github/license/irisblack374-pixel/Site-?style=for-the-badge" alt="License">
+  <strong>Discord Bot بسيط باستخدام Python و discord.py</strong><br>
+  سهل القراءة • سهل التشغيل • قابل للتطوير
 </p>
 
 <p align="center">
-  <strong>بوت Discord بسيط ومرتب مبني باستخدام Python و discord.py.</strong><br>
-  مناسب كبداية لمشروع بوت قابل للتطوير وإضافة أوامر جديدة.
+  <img src="https://img.shields.io/badge/Python-3.11+-3776AB?logo=python&logoColor=white" alt="Python">
+  <img src="https://img.shields.io/badge/discord.py-2.x-5865F2?logo=discord&logoColor=white" alt="discord.py">
 </p>
 
 ---
 
-## ✨ ما هو Site-؟
+## 📌 عن المشروع
 
-**Site-** هو مشروع بوت Discord بسيط يحتوي على مجموعة أوامر مفيدة للتجربة والتطوير.
+**Site-** هو بوت Discord بسيط يحتوي على أوامر أساسية للتجربة والتطوير.
 
-الفكرة ببساطة:
+الفكرة:
 
-```text
-👤 المستخدم
-   │
-   ▼
-💬 يكتب الأمر
-   │
-   ▼
-🤖 Site- Bot
-   │
-   ▼
-🐍 Python + discord.py
-   │
-   ▼
-📨 البوت يرسل النتيجة
 ```
+👤 المستخدم
+   ↓
+💬 الأمر
+   ↓
+🤖 Site-
+   ↓
+📨 النتيجة
+```
+
+> صُمم هذا الـ README ليكون بسيطًا ومريحًا للقراءة على الجوال.
 
 ---
 
 ## 🧩 الأوامر
 
-| الأمر | الوظيفة |
-|---|---|
-| `/ping` | 🏓 فحص استجابة البوت |
-| `/server` | 🏠 عرض معلومات السيرفر |
-| `/user` | 👤 عرض معلومات المستخدم |
-| `/avatar` | 🖼️ عرض صورة المستخدم |
-| `/help` | 📚 عرض قائمة المساعدة |
+### 🏓 `/ping`
+يعرض استجابة البوت.
 
-### 💡 مثال
+### 🏠 `/server`
+يعرض معلومات السيرفر.
 
-```text
-/user
-      ↓
-🤖 Site- يعرض معلومات المستخدم
-```
+### 👤 `/user`
+يعرض معلومات المستخدم.
+
+### 🖼️ `/avatar`
+يعرض صورة المستخدم.
+
+### 📚 `/help`
+يعرض قائمة المساعدة.
 
 ---
 
 ## 🛠️ التقنيات
 
-| التقنية | الاستخدام |
-|---|---|
-| 🐍 Python | لغة البرمجة |
-| 💬 discord.py | التعامل مع Discord API |
-| 🔐 .env | حفظ التوكن والإعدادات السرية |
+- 🐍 **Python**
+- 💬 **discord.py**
+- 🔐 **Environment Variables (.env)**
 
 ---
 
 ## 📁 ملفات المشروع
 
-```text
-Site-/
-│
-├── 🤖 bot.py
-│   └── الكود الرئيسي للبوت
-│
-├── 📦 requirements.txt
-│   └── مكتبات Python المطلوبة
-│
-├── 🔐 .env.example
-│   └── نموذج لإعدادات البيئة
-│
-├── 🚫 .gitignore
-│   └── ملفات لا يجب رفعها إلى GitHub
-│
-└── 📖 README.md
-    └── شرح المشروع
 ```
+Site-/
+├── bot.py
+├── requirements.txt
+├── .env.example
+├── .gitignore
+└── README.md
+```
+
+**bot.py** → الكود الرئيسي للبوت  
+**requirements.txt** → المكتبات المطلوبة  
+**.env.example** → نموذج الإعدادات  
+**.gitignore** → ملفات GitHub المستثناة  
+**README.md** → شرح المشروع
 
 ---
 
-## 🚀 التشغيل خطوة بخطوة
+## 🚀 طريقة التشغيل
 
-### 1️⃣ تثبيت Python
+### 1️⃣ ثبّت Python
 
 استخدم **Python 3.11 أو أحدث**.
 
-### 2️⃣ تثبيت المكتبات
-
-من داخل مجلد المشروع:
+### 2️⃣ ثبّت المكتبات
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 3️⃣ إعداد ملف البيئة
+### 3️⃣ أنشئ ملف `.env`
 
 انسخ:
 
-```text
+```
 .env.example
 ```
 
 إلى:
 
-```text
+```
 .env
 ```
 
-ثم ضع توكن البوت:
+ثم ضع التوكن:
 
 ```env
 DISCORD_TOKEN=YOUR_BOT_TOKEN
 ```
 
-### 4️⃣ تشغيل البوت
+### 4️⃣ شغّل البوت
 
 ```bash
 python bot.py
 ```
 
-إذا بدأ البوت بشكل صحيح، سيعمل ويتصل بـ Discord.
+---
+
+## 🔐 الأمان
+
+⚠️ **لا ترفع ملف `.env` إلى GitHub.**
+
+توكن البوت سري مثل كلمة المرور.
+
+إذا تم نشر التوكن بالخطأ، قم بإلغائه وإنشاء توكن جديد من **Discord Developer Portal**.
 
 ---
 
-## 🔐 مهم جدًا — حماية التوكن
-
-**لا ترفع ملف `.env` إلى GitHub.**
-
-توكن البوت مثل كلمة مرور البوت، لذلك لا تشاركه مع أي شخص.
-
-إذا ظهر التوكن في GitHub أو تم نشره بالخطأ، قم بتغييره من **Discord Developer Portal**.
-
----
-
-## 🧠 كيف تطور المشروع؟
-
-يمكنك لاحقًا إضافة:
+## 🔮 أفكار للتطوير
 
 - 🛡️ أوامر إدارة
 - 🎫 نظام تذاكر
 - 🎉 أوامر ترفيهية
-- 📊 نظام إحصائيات
-- 🎁 نظام نقاط ومكافآت
-- ⚙️ إعدادات خاصة بكل سيرفر
+- 📊 إحصائيات
+- 🎁 نظام نقاط
+- ⚙️ إعدادات للسيرفر
 
 ---
 
-## 📌 حالة المشروع
+## 🟢 حالة المشروع
 
-```text
-🟢 المشروع قابل للتشغيل
-🟢 أوامر أساسية موجودة
-🟢 جاهز للتطوير
-```
+**جاهز للتشغيل والتطوير.**
 
 ---
 
 <p align="center">
-  <strong>🤖 Site- • Built with Python & discord.py</strong><br>
-  ⭐ إذا أعجبك المشروع، يمكنك عمل Star للمستودع
+  🤖 <strong>Site-</strong><br>
+  Built with Python & discord.py
 </p>
