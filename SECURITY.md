@@ -17,3 +17,7 @@ DISCORD_TOKEN=YOUR_BOT_TOKEN
 Never commit `.env` or paste a real token into GitHub.
 
 If a token is exposed, immediately reset it in the Discord Developer Portal.
+
+## Privacy-friendly analytics
+
+Site- keeps command usage and error counters in memory while the bot is running. These counters are not uploaded to an external analytics service. Restarting the bot resets them. The `/stats` command shows aggregate bot statistics.
