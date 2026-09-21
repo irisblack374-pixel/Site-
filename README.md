@@ -1,105 +1,601 @@
 <div align="center">
-<img src="https://raw.githubusercontent.com/irisblack374-pixel/Site-/main/assets/icons/site.svg" width="70" alt="Site icon">
+<img src="https://raw.githubusercontent.com/irisblack374-pixel/Site-/main/assets/icons/site.svg" width="76" alt="Site icon">
 <h1>Site-</h1>
-<p><b>Simple Discord Bot • Python • discord.py</b></p>
-<p>A clean Discord bot project focused on useful commands and a simple structure.</p>
+<p><b>Discord Bot • Python • discord.py</b></p>
+<p>بوت ديسكورد بسيط وسهل التعديل، يحتوي على أوامر معلومات وإدارة أساسية.</p>
 </div>
 
 ---
 
-## <img src="https://raw.githubusercontent.com/irisblack374-pixel/Site-/main/assets/icons/commands.svg" width="28" align="absmiddle"> COMMANDS
+## <img src="https://raw.githubusercontent.com/irisblack374-pixel/Site-/main/assets/icons/site.svg" width="28" align="absmiddle"> ما هو البوت؟
 
-| Command | Description |
+**Site-** هو بوت Discord مكتوب بلغة **Python** باستخدام مكتبة **discord.py**.
+
+الفكرة بسيطة: تشغّل البوت، تضيفه إلى سيرفرك، وبعدها تظهر لك أوامر Slash تبدأ بـ `/` مثل:
+
+```
+/ping
+/server
+/user
+/avatar
+/help
+/clear
+/kick
+/ban
+/unban
+```
+
+لا تحتاج تعرف برمجة حتى تشغله. كل خطوات التشغيل موجودة بالأسفل.
+
+---
+
+## <img src="https://raw.githubusercontent.com/irisblack374-pixel/Site-/main/assets/icons/commands.svg" width="28" align="absmiddle"> الأوامر بالتفصيل
+
+### 🏓 `/ping` — سرعة البوت
+
+يعرض سرعة استجابة البوت بالـ milliseconds.
+
+مثال:
+
+```
+/ping
+↓
+Pong! 82ms
+```
+
+كلما كان الرقم أقل، فهذا يعني أن استجابة البوت في تلك اللحظة أسرع.
+
+---
+
+### 🏠 `/server` — معلومات السيرفر
+
+يعرض معلومات أساسية عن السيرفر الذي استخدمت فيه الأمر:
+
+- اسم السيرفر
+- عدد الأعضاء
+- ID السيرفر
+
+يعمل داخل السيرفر فقط.
+
+---
+
+### 👤 `/user` — معلومات عضو
+
+يعرض معلومات العضو الذي تختاره.
+
+إذا لم تختَر عضوًا، يعرض معلوماتك أنت.
+
+يعرض:
+
+- اسم العرض
+- ID العضو
+- تاريخ انضمامه للسيرفر عندما تكون المعلومة متاحة
+
+مثال:
+
+```
+/user
+```
+
+أو تختار عضوًا من خانة **member**.
+
+---
+
+### 🖼️ `/avatar` — صورة العضو
+
+يعرض رابط صورة الحساب للعضو الذي تختاره.
+
+إذا لم تحدد عضوًا، يستخدم حسابك أنت.
+
+مثال:
+
+```
+/avatar
+```
+
+---
+
+### 🤖 `/help` — قائمة الأوامر
+
+يعرض لك قائمة مختصرة بأوامر البوت الموجودة حاليًا.
+
+إذا نسيت أمرًا، استخدم:
+
+```
+/help
+```
+
+---
+
+### 🧹 `/clear` — حذف رسائل
+
+يستخدم لحذف عدد محدد من الرسائل في القناة.
+
+مثال:
+
+```
+/clear amount: 20
+```
+
+يمكن حذف من **1 إلى 100 رسالة** في العملية الواحدة.
+
+🔐 الأمر مخصص لمن لديهم صلاحية **Manage Messages**.
+
+---
+
+### 👢 `/kick` — طرد عضو
+
+يطرد عضوًا من السيرفر مع إمكانية كتابة سبب.
+
+مثال:
+
+```
+/kick member: @User reason: مخالفة القوانين
+```
+
+🔐 يحتاج المستخدم إلى صلاحية **Kick Members**.
+
+---
+
+### 🔨 `/ban` — حظر عضو
+
+يحظر عضوًا من السيرفر مع إمكانية كتابة سبب.
+
+مثال:
+
+```
+/ban member: @User reason: مخالفة القوانين
+```
+
+🔐 يحتاج المستخدم إلى صلاحية **Ban Members**.
+
+---
+
+### 🔓 `/unban` — فك حظر
+
+يفك حظر مستخدم باستخدام **User ID**.
+
+مثال:
+
+```
+/unban user_id: 123456789012345678
+```
+
+🔐 يحتاج المستخدم إلى صلاحية **Ban Members**.
+
+---
+
+## <img src="https://raw.githubusercontent.com/irisblack374-pixel/Site-/main/assets/icons/python.svg" width="28" align="absmiddle"> ماذا يستخدم البوت؟
+
+| التقنية | وظيفتها |
 |---|---|
-| `/ping` | Checks the bot response |
-| `/server` | Shows server information |
-| `/user` | Shows user information |
-| `/avatar` | Displays a user's avatar |
-| `/help` | Shows the available commands |
+| 🐍 Python | لغة برمجة البوت |
+| 🔷 discord.py | ربط Python مع Discord |
+| ⚙️ python-dotenv | قراءة التوكن من ملف `.env` |
+| 💬 Slash Commands | الأوامر التي تبدأ بـ `/` |
 
 ---
 
-## <img src="https://raw.githubusercontent.com/irisblack374-pixel/Site-/main/assets/icons/python.svg" width="28" align="absmiddle"> TECHNOLOGY
-
-- Python
-- discord.py
-- python-dotenv
-
----
-
-## PROJECT STRUCTURE
+## <img src="https://raw.githubusercontent.com/irisblack374-pixel/Site-/main/assets/icons/site.svg" width="28" align="absmiddle"> ملفات المشروع
 
 ```
 Site-/
+│
 ├── bot.py
-├── .env
 ├── requirements.txt
+├── .env
 └── README.md
 ```
 
-### bot.py
-The main bot file. It contains the Discord client and command logic.
+### 📄 `bot.py`
 
-### .env
-Stores the Discord bot token locally.
+هذا هو **ملف البوت الرئيسي**.
 
-Example:
+داخله موجود:
+
+- الاتصال بـ Discord
+- أوامر البوت
+- الصلاحيات المطلوبة للأوامر
+- رسائل الاستجابة
+- تشغيل البوت
+
+### 📦 `requirements.txt`
+
+هذا الملف يخبر Python بالمكتبات التي يحتاجها المشروع.
+
+المشروع يستخدم:
+
+```
+discord.py
+python-dotenv
+```
+
+### 🔐 `.env`
+
+هذا الملف مخصص لوضع **Bot Token**.
+
+يكون بهذا الشكل:
 
 ```env
-DISCORD_TOKEN=your_token_here
+DISCORD_TOKEN=ضع_توكن_البوت_هنا
 ```
 
-Do not publish your real token.
+⚠️ **لا ترسل التوكن لأي شخص ولا ترفعه إلى GitHub.**
 
-### requirements.txt
-Contains the Python dependencies required by the project.
+### 📖 `README.md`
+
+هذا الملف هو الشرح الموجود في GitHub.
 
 ---
 
-## HOW IT WORKS
+# 🚀 تشغيل البوت للمبتدئين
+
+إذا ما تعرف برمجة، اتبع الخطوات بالترتيب.
+
+## 1️⃣ ثبّت Python
+
+حمّل Python من الموقع الرسمي:
+
+https://www.python.org/downloads/
+
+بعد التثبيت افتح Terminal أو CMD واكتب:
+
+```bash
+python --version
+```
+
+إذا ظهر رقم مثل:
 
 ```
-Discord
-   ↓
-Bot
-   ↓
-Command
-   ↓
-Response
+Python 3.x.x
 ```
 
-The bot receives a command from Discord, processes it through the command handler, and returns the requested information.
+فـ Python جاهز.
 
 ---
 
-## RUN
+## 2️⃣ حمّل المشروع
 
-Install the dependencies:
+من GitHub اضغط:
+
+**Code → Download ZIP**
+
+بعدها فك ضغط الملف في مكان واضح، مثل سطح المكتب.
+
+ستجد مجلد:
+
+```
+Site-
+```
+
+---
+
+## 3️⃣ افتح Terminal داخل مجلد المشروع
+
+افتح مجلد `Site-`.
+
+ثم افتح Terminal/CMD داخل نفس المجلد.
+
+يجب أن تكون الملفات أمامك مثل:
+
+```
+bot.py
+requirements.txt
+README.md
+```
+
+---
+
+## 4️⃣ ثبّت المكتبات
+
+داخل Terminal اكتب:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-Then start the bot:
+انتظر حتى ينتهي التثبيت.
+
+إذا ظهر:
+
+```
+Successfully installed
+```
+
+فهذا يعني أن المكتبات تم تثبيتها.
+
+---
+
+## 5️⃣ أنشئ ملف `.env`
+
+داخل مجلد `Site-` أنشئ ملفًا اسمه بالضبط:
+
+```
+.env
+```
+
+ثم ضع داخله:
+
+```env
+DISCORD_TOKEN=توكن_البوت_هنا
+```
+
+مثال شكلي فقط:
+
+```env
+DISCORD_TOKEN=YOUR_BOT_TOKEN
+```
+
+⚠️ لا تستخدم المثال نفسه. ضع **التوكن الحقيقي للبوت**.
+
+---
+
+# 🔑 من أين أحصل على Bot Token؟
+
+اذهب إلى **Discord Developer Portal** وأنشئ Application ثم Bot.
+
+بعد إنشاء البوت:
+
+**Bot → Token → Reset Token / Copy**
+
+ثم ضع التوكن داخل `.env`.
+
+⚠️ التوكن مثل كلمة مرور البوت. لا تنشره في GitHub أو Discord أو ترسله لأحد.
+
+إذا انكشف التوكن، غيّره من Developer Portal فورًا.
+
+---
+
+# 🤖 إضافة البوت إلى السيرفر
+
+بعد إنشاء البوت، تحتاج إلى دعوته إلى السيرفر.
+
+من **Discord Developer Portal**:
+
+```
+OAuth2
+↓
+URL Generator
+```
+
+اختر:
+
+**Scopes**
+- `bot`
+- `applications.commands`
+
+ثم اختر الصلاحيات التي يحتاجها البوت.
+
+لأن المشروع يحتوي على أوامر إدارة مثل `clear`, `kick` و`ban`، يجب أن يحصل البوت على الصلاحيات المناسبة لتنفيذها.
+
+بعدها انسخ رابط الدعوة وافتحه، ثم اختر السيرفر.
+
+---
+
+# ▶️ تشغيل البوت
+
+بعد تثبيت المكتبات ووضع التوكن، افتح Terminal داخل مجلد المشروع واكتب:
 
 ```bash
 python bot.py
 ```
 
-Make sure the bot token is configured in `.env`.
+إذا اشتغل بشكل صحيح، ستظهر رسالة في Terminal شبيهة بـ:
+
+```
+Logged in as YOUR_BOT | Slash commands synced
+```
+
+الآن البوت **Online**.
 
 ---
 
-## PROJECT STYLE
+# 💬 كيف أستخدمه في Discord؟
 
-**Simple. Clean. Practical.**
+افتح السيرفر الذي أضفت إليه البوت.
 
-The project is intentionally structured so it is easy to understand, modify and expand.
+اكتب:
+
+```
+/
+```
+
+ستظهر أوامر البوت.
+
+ابدأ مثلًا بـ:
+
+```
+/help
+```
+
+ثم جرّب:
+
+```
+/ping
+```
+
+إذا رد البوت، فكل شيء يعمل.
+
+---
+
+# 🛠️ إذا الأوامر لا تظهر
+
+جرّب هذه الأشياء بالترتيب:
+
+### 1. 🔄 أعد تشغيل البوت
+
+أوقفه ثم شغله:
+
+```bash
+python bot.py
+```
+
+### 2. 🔗 تأكد من دعوة البوت
+
+تأكد أنك استخدمت:
+
+```
+bot
+applications.commands
+```
+
+### 3. 🔐 تأكد من الصلاحيات
+
+أوامر الإدارة تحتاج صلاحيات Discord المناسبة.
+
+### 4. 📁 تأكد من مكان `.env`
+
+يجب أن يكون بجانب `bot.py`:
+
+```
+Site-/
+├── bot.py
+├── .env
+└── requirements.txt
+```
+
+### 5. 🔑 تأكد من التوكن
+
+يجب أن يكون اسم المتغير بالضبط:
+
+```
+DISCORD_TOKEN
+```
+
+---
+
+# ❌ أشهر الأخطاء
+
+### `DISCORD_TOKEN غير موجود في ملف .env`
+
+السبب: البوت لم يجد التوكن.
+
+الحل:
+
+تأكد من وجود:
+
+```
+.env
+```
+
+وفي داخله:
+
+```env
+DISCORD_TOKEN=توكنك
+```
+
+---
+
+### `ModuleNotFoundError`
+
+يعني أن مكتبة مطلوبة غير مثبتة.
+
+جرّب:
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+### ❌ البوت Online لكن أمر الإدارة لا يعمل
+
+تأكد من:
+
+- صلاحيات البوت في السيرفر.
+- صلاحيات حسابك.
+- ترتيب الـRole الخاص بالبوت إذا كان يتعامل مع أعضاء لديهم رتبة أعلى.
+
+---
+
+# 🧠 كيف يعمل البوت من الداخل؟
+
+الفكرة الأساسية:
+
+```
+.env
+ │
+ │ Token
+ ▼
+bot.py
+ │
+ │ اتصال Discord
+ ▼
+Discord API
+ │
+ ├── /ping
+ ├── /server
+ ├── /user
+ ├── /avatar
+ ├── /help
+ ├── /clear
+ ├── /kick
+ ├── /ban
+ └── /unban
+```
+
+عند تشغيل `bot.py`:
+
+**1. 🔐** يقرأ التوكن من `.env`  
+**2. 🔌** يتصل بـ Discord  
+**3. 🔄** يعمل مزامنة للأوامر  
+**4. 💬** يستقبل أوامر Slash  
+**5. ⚙️** ينفذ الأمر  
+**6. 📩** يرسل النتيجة إلى Discord
+
+---
+
+# 👨‍💻 هل أحتاج أعرف البرمجة؟
+
+**لا.**
+
+لتشغيل المشروع فقط تحتاج تعرف:
+
+1. تنزيل المشروع.
+2. تثبيت Python.
+3. تثبيت المكتبات.
+4. وضع Bot Token في `.env`.
+5. تشغيل:
+
+```bash
+python bot.py
+```
+
+أما تعديل الأوامر أو إضافة ميزات جديدة، فهذا يحتاج معرفة بسيطة بـ Python، ويمكنك تطويره لاحقًا.
+
+---
+
+# 🛡️ أمان مهم جدًا
+
+🚨 **لا تضع Bot Token داخل `bot.py`.**
+
+🚨 **لا تنشر ملف `.env`.**
+
+🚨 **لا تضع التوكن في README.**
+
+🚨 **لا ترسل التوكن في Discord.**
+
+إذا تم تسريب التوكن، قم بتغييره من Discord Developer Portal.
+
+---
+
+## <img src="https://raw.githubusercontent.com/irisblack374-pixel/Site-/main/assets/icons/site.svg" width="28" align="absmiddle"> QUICK START
+
+```bash
+# 1 — تثبيت المكتبات
+pip install -r requirements.txt
+
+# 2 — وضع التوكن داخل .env
+DISCORD_TOKEN=YOUR_BOT_TOKEN
+
+# 3 — تشغيل البوت
+python bot.py
+```
 
 <div align="center">
-<img src="https://raw.githubusercontent.com/irisblack374-pixel/Site-/main/assets/icons/site.svg" width="42">
+<img src="https://raw.githubusercontent.com/irisblack374-pixel/Site-/main/assets/icons/site.svg" width="46">
 <br><br>
 <b>BUILD • TEST • EVOLVE</b>
 <br>
-2026
+Simple Discord Bot · Python · discord.py · 2026
 </div>
